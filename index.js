@@ -1,3 +1,5 @@
+const daGameBoard = document.getElementById("gameBoard");
+
 let playBoard = document.createElement("div");
 let playerOne = true;
 
@@ -18,9 +20,10 @@ function playGame() {
 function createPlayBoard() {
 	for (var i = 0; i < 9; i++) {
 		playBoard = document.createElement("div");
-		document.getElementById("gameBoard").appendChild(playBoard);
+		playBoard.classList.add("griddie");
+		daGameBoard.appendChild(playBoard);
 	}
-	document.getElementById("gameBoard").addEventListener('click', playGame);
+	daGameBoard.addEventListener('click', playGame);
 }
 
 createPlayBoard();

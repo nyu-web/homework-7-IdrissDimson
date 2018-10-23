@@ -1,8 +1,10 @@
 body {
-	background-color: #ccc;
+	background-color: #bbb;
 	font-family: Arial;
 }
-
+h1 {
+	text-align: center;
+}
 section {
 	margin: 5% auto;
 	width: 50%;
@@ -12,12 +14,6 @@ section {
 }
 
 div {
-	width: 100%;
-	height: 100%;
-	border: 1px solid #fff;
-	color: #fff;
-	font-size: 3rem;
-
 	display: flex;
 	justify-content: center;
 	align-items: center;
@@ -25,4 +21,10 @@ div {
 
 div:hover {
 	cursor: pointer;
+}
+
+.griddie {
+	border: 1px solid #fff;
+	color: #fff;
+	font-size: 10rem;
 }
